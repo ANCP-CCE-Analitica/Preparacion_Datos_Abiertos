@@ -1,14 +1,14 @@
-# [Nombre del proyecto]
+# Preparación de datos abiertos
 
-[Agregue una breve descripción del proyecto junto con la metodología que se va a implementar para guiar su proceso de desarrollo (por defecto puede enunciar la metodología TDSP)]
+Trabajo conjunto con la subdirección de IDT para la preparación de datos abiertos.
 
 ## Estado actual del proyecto
 
-[Agregar una descripción del estado actual del proyecto. Por ejemplo, Actualmente, el equipo se encuentra en la fase de definición del problema y la preparación de los datos.]
+En desarrollo
 
 ## Metodología utilizada
 
-[Agregue una breve descripción de la metodología que se usará, enunciando las fases (o sprints que planea ir atacando)]
+TDSP - Ampliar
 
 ## Estructura del proyecto
 
@@ -22,7 +22,22 @@ El proyecto se organiza en las siguientes carpetas y subcarpetas:
 
 ## Requisitos de instalación y uso
 
-[En está sección deberá incluir todos los requisitos técnicos del proyecto. Por ejemplo, las librerías que se deberán tener instaladas, la configuración del ambiente, configuraciones de red, entre otros]
+Para poder utilizar SQL en Python es necesario instalar lo siguiente, escoja el driver de acuerdo al sistema operativo de su equipo: 
+ 
+ 
+**Driver Microsoft ODBC para SQL SERVER en windows**
+ 
+Descargar e instalar el driver de la página [Microsoft ODBC](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server) versión 
+ 17.
+ 
+**Driver Microsoft ODBC para SQL SERVER en Linux o MacOs**
+ 
+Descargar e instalar el driver de la página [Microsoft ODBC](https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/system-requirements?view=sql-server-ver15) versión 17 deacuerdo a la versión de su sistema operativo.
+Recuerde estar conectado a la VPN para poder accerder. 
+
+**Paquete pyobdc**
+
+Quite el comentario e inicie la instalación simple.
 
 ## Cómo contribuir
 
