@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../.."
+		},
+		{
+			"path": "../../../../../Revisión_Data_SandBox"
+		}
+	],
+	"settings": {
+		"python.envFile": "${workspaceFolder}/.databricks/.databricks.env",
+		"databricks.python.envFile": "${workspaceFolder}/.env"
+	}
+}
