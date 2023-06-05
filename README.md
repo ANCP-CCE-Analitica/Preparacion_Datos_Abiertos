@@ -10,6 +10,14 @@ En desarrollo
 
 TDSP - Ampliar
 
+- Exploración
+- Análisis de estandarización
+- Creación e implementación de funciones
+- Pruebas y ajustes
+- Documentación y publicación
+- Revisión
+- Paso a producción
+
 ## Estructura del proyecto
 
 El proyecto se organiza en las siguientes carpetas y subcarpetas:

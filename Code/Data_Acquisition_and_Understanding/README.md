@@ -58,7 +58,10 @@ blob_client = blob_service_client.get_blob_client(container='name_blob', blob='r
 
 # Usar pandas para leer el archivo
 df = pd.read_csv(blob_client.download_blob())
-
-# Mostrar los datos
-display(df.head())
 ```
+
+## Inclusión de variables
+
+Como protocolo de inclusión de variables y análisis, se propone usar el script data_management.py en donde se encuentran recopiladas todas las funciones necesarias y más usadas para el proceso de unificación, estandarización y preparación de datos.
+
+
