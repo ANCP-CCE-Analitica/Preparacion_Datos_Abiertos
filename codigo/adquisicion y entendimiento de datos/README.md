@@ -1,4 +1,4 @@
-# Data_Acquisition_and_Understanding
+# adquisicion_y_entendimiento_de_datos
 
 Esta carpeta alberga código para la adquisición y comprensión de datos (análisis exploratorio). 
 

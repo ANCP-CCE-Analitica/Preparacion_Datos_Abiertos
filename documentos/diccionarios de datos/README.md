@@ -1,4 +1,4 @@
-# Data_Dictionaries
+# diccionarios_de_datos
 
 El contenido de esta carpeta se destina principalmente a otros desarrolladores y usuarios del proyecto que necesiten entender y utilizar los datos utilizados en el proyecto. Los archivos contenidos en esta carpeta proporcionan una descripción detallada de los datos, incluyendo información sobre las variables, su definición, tipo de datos, rango de valores, unidades de medida, etc.
 

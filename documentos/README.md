@@ -1,4 +1,4 @@
-# Docs
+# documentos
 
 Usaremos esta carpeta para almacenar documentación y recursos del proyecto, tales como manuales, guías, diagramas, presentaciones, etc.
 

@@ -1,4 +1,4 @@
-# Project
+# gestion_del_proyecto
 
 Carpeta para alojar documentos e informes referentes a la gestión del proyecto.
 

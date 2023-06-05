@@ -1,4 +1,4 @@
-# Scripts  
+# scripts  
 
 Contiene los scripts utilizados para adquirir, limpiar y explorar los datos
 

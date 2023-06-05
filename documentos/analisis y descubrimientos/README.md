@@ -1,4 +1,4 @@
-# Carpeta DataReport
+# Carpeta analisis_y_descubrimientos
 
 Esta carpeta puede ser una herramienta valiosa para comunicar los hallazgos y el análisis de los datos a otros miembros del equipo y a los stakeholders del proyecto. Además, también puede ser útil para documentar el proceso de exploración de datos y permitir a otros desarrolladores y usuarios del proyecto entender mejor los datos utilizados.
 
