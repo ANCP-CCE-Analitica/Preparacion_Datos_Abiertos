@@ -32,12 +32,12 @@ codigo (Contiene todo el código del proyecto)
 |___ reportes
 |___ scripts (archivos que no son usados directamente por los cuadernillos (.sql, .py, etc))
 
-documentos: En esta carpeta alojará todos los documentos del proyecto.
+documentos (Alojará todos los documentos del proyecto)
 |_ analisis y descubrimientos
 |_ diccionarios de datos
 |_ gestion del proyecto
 
-muestras de datos: Dependiendo de los requerimientos del cliente con respecto a la publicación de datos de prueba, puede almacenarlos o no en esta carpeta. El objetivo de almacenar dichos datos es ejecutar y validar rápidamente que es lo que están haciendo los scripts del proyecto por ejemplo.
+muestras de datos (Datos usados para validar, ejecutar o complementar los análisis que se requieran para el proyecto)
 |_ auxiliar (archivos que complementan a la base principal del proyecto)
 |_ procesados (datos que se procesaron con algúno de los cuadernillos del proyecto)
 |_ sin procesar (datos en su versión pura o recien descargada de alguna de las fuentes de la agencia)
