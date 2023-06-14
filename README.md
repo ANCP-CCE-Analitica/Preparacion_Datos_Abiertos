@@ -22,11 +22,28 @@ TDSP - Ampliar
 
 El proyecto se organiza en las siguientes carpetas y subcarpetas:
 
-- `Code`: Esta carpeta contiene todo el código del proyecto.
+```
+codigo (Contiene todo el código del proyecto)
+|_ adquisicion y entendimiento de datos
+|___ cuadernillos
+|_____ libreria 
+|_______ archivos.py (archivos usados en los cuadernillos)
+|_____ archivos.ipynb
+|___ reportes
+|___ scripts (archivos que no son usados directamente por los cuadernillos (.sql, .py, etc))
 
-- `Docs`: En esta carpeta alojará todos los documentos del proyecto.
+documentos: En esta carpeta alojará todos los documentos del proyecto.
+|_ analisis y descubrimientos
+|_ diccionarios de datos
+|_ gestion del proyecto
 
-- `Sample_Data`: Dependiendo de los requerimientos del cliente con respecto a la publicación de datos de prueba, puede almacenarlos o no en esta carpeta. El objetivo de almacenar dichos datos es ejecutar y validar rápidamente que es lo que están haciendo los scripts del proyecto por ejemplo.
+muestras de datos: Dependiendo de los requerimientos del cliente con respecto a la publicación de datos de prueba, puede almacenarlos o no en esta carpeta. El objetivo de almacenar dichos datos es ejecutar y validar rápidamente que es lo que están haciendo los scripts del proyecto por ejemplo.
+|_ auxiliar (archivos que complementan a la base principal del proyecto)
+|_ procesados (datos que se procesaron con algúno de los cuadernillos del proyecto)
+|_ sin procesar (datos en su versión pura o recien descargada de alguna de las fuentes de la agencia)
+
+.gitignore (archivo en donde se alojarán todas las rutas de las bases que ya se encuentren en el datalake y los archivos de configuración que contengan credenciales de acceso)
+```
 
 ## Requisitos de instalación y uso
 
