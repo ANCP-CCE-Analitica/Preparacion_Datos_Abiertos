@@ -6,7 +6,7 @@ from enum import Enum
 
 # Cargue de las credenciales para acceso a SQL server y/o a el DataLake
 config = configparser.ConfigParser(interpolation=ExtendedInterpolation())
-config.read("archivos_de_configuracion/config.ini")
+config.read("archivos de configuracion/config.ini")
 
 # Llaves para conexion a SQL server bodega
 server_bodega = config.get('ConexionSQLServerReports', 'server')
