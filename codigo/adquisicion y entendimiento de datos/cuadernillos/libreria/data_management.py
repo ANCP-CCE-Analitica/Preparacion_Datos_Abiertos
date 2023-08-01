@@ -83,25 +83,25 @@ def remove_extra_punct(text):
 # Arreglo de modalidades
 # ==============================================================================
 def Tipo_Proceso (mod):
-    if (mod == "Asociacion Publico Privada") | (mod == "Asociación Público Privada"):
+    if (mod == "Asociacion Publico Privada") | (mod == "Asociación Público Privada") | (mod == "asociacion publico privada"):
         tp = "Asociación Público Privada"
-    elif (mod == "Concurso de meritos abierto") | (mod == "Concurso de Méritos con Lista Corta") | (mod == "Concurso de méritos abierto") | (mod == "Concurso de Méritos Abierto") | (mod == "CCE-20-Concurso_Meritos_Sin_Lista_Corta_1Sobre") | (mod == "Concurso de meritos con precalificacion") | (mod == "Concurso de Meritos con Lista Corta") | (mod == "Concurso de Meritos Abierto") | (mod == "Concurso de diseño Arquitectónico"):
+    elif (mod == "cce concurso_meritos_con_lista_corta_") | (mod == "concurso diseño arquitectonico") | (mod == "cce concurso_meritos_sin_lista_corta_") | (mod == "concurso meritos abierto") | (mod == "concurso meritos lista corta") | (mod == "concurso meritos precalificacion") | (mod == "Concurso de meritos abierto") | (mod == "Concurso de Méritos con Lista Corta") | (mod == "Concurso de méritos abierto") | (mod == "Concurso de Méritos Abierto") | (mod == "CCE-20-Concurso_Meritos_Sin_Lista_Corta_1Sobre") | (mod == "Concurso de meritos con precalificacion") | (mod == "Concurso de Meritos con Lista Corta") | (mod == "Concurso de Meritos Abierto") | (mod == "Concurso de diseño Arquitectónico"):
         tp = "Concurso de Méritos"
-    elif (mod  == "Contratacion directa") | (mod == "Contratación Directa (con ofertas)") | (mod == "Contratación directa") | (mod == "Contratacion Directa (con ofertas)") | (mod == "Contratacion Directa (Ley 1150 de 2007)") | (mod == "Contratación Directa (Ley 1150 de 2007)"):
+    elif (mod  == "formas contratacion directa") | (mod  == "contratacion directa") | (mod  == "contratacion directa ( ley )") | (mod  == "contratacion directa ( ofertas )") | (mod  == "Contratacion directa") | (mod == "Contratación Directa (con ofertas)") | (mod == "Contratación directa") | (mod == "Contratacion Directa (con ofertas)") | (mod == "Contratacion Directa (Ley 1150 de 2007)") | (mod == "Contratación Directa (Ley 1150 de 2007)"):
         tp = "Contratación Directa"
-    elif (mod == "Minima cuantia") | (mod == "Mínima cuantía") | (mod == "Contratacion Minima Cuantia") | (mod == "Contratación Mínima Cuantía"):
+    elif (mod == "minima cuantia") | (mod == "contratacion minima cuantia") | (mod == "Minima cuantia") | (mod == "Mínima cuantía") | (mod == "Contratacion Minima Cuantia") | (mod == "Contratación Mínima Cuantía"):
         tp = "Contratación Mínima Cuantía"
-    elif (mod == "Contratos y convenios con mas de dos partes") | (mod == "Contratos y convenios con más de dos partes"):
+    elif (mod == "contratos convenios mas dos partes") | (mod == "Contratos y convenios con mas de dos partes") | (mod == "Contratos y convenios con más de dos partes"):
         tp = "Convenios dos Partes"
-    elif (mod == "Licitacion publica") | (mod == "Licitación pública Obra Publica") | (mod == "Licitacion publica Obra Publica") | (mod == "Licitación Pública") | (mod == "Licitación obra pública") | (mod == "Licitacion obra publica") | (mod == "Licitacion Publica") | (mod == "Licitación pública"):
+    elif (mod == "licitacion obra publica") | (mod == "licitacion publica") | (mod == "licitacion publica obra publica") | (mod == "Licitacion publica") | (mod == "Licitación pública Obra Publica") | (mod == "Licitacion publica Obra Publica") | (mod == "Licitación Pública") | (mod == "Licitación obra pública") | (mod == "Licitacion obra publica") | (mod == "Licitacion Publica") | (mod == "Licitación pública"):
         tp = "Licitación Pública"
-    elif (mod == "Licitacion Publica Acuerdo Marco de Precios") | (mod == "Licitación Pública Acuerdo Marco de Precios"):
+    elif (mod == "licitacion publica acuerdo marco precios") | (mod == "Licitacion Publica Acuerdo Marco de Precios") | (mod == "Licitación Pública Acuerdo Marco de Precios"):
         tp = "Licitacion Publica Acuerdo Marco de Precios"
-    elif (mod == "Contratacion regimen especial") | (mod == "Contratación régimen especial (con ofertas)") | (mod == "Contratación régimen especial") | (mod == "Régimen Especial") | (mod == "Contratacion regimen especial (con ofertas)") | (mod == "Regimen Especial"):
+    elif (mod == "contratacion regimen especial") | (mod == "contratacion regimen especial ( ofertas )") | (mod == "regimen especial") | (mod == "Contratacion regimen especial") | (mod == "Contratación régimen especial (con ofertas)") | (mod == "Contratación régimen especial") | (mod == "Régimen Especial") | (mod == "Contratacion regimen especial (con ofertas)") | (mod == "Regimen Especial"):
         tp = "Régimen Especial"
-    elif (mod == "Enajenacion de bienes con sobre cerrado") | (mod == "Enajenacion de bienes con subasta") | (mod == "Enajenación de bienes con subasta") | (mod == "Enajenación de bienes con sobre cerrado"):
+    elif (mod == "enajenacion bienes cerrado") | (mod == "enajenacion bienes subasta") | (mod == "Enajenacion de bienes con sobre cerrado") | (mod == "Enajenacion de bienes con subasta") | (mod == "Enajenación de bienes con subasta") | (mod == "Enajenación de bienes con sobre cerrado"):
         tp = "Enajenacion de bienes"
-    elif (mod == "Seleccion Abreviada de Menor Cuantia") | (mod == "Selección Abreviada del literal h del numeral 2 del artículo 2 de la Ley 1150 de 2007") | (mod == "Subasta") | (mod == "Selección abreviada subasta inversa") | (mod == "Selección Abreviada servicios de Salud") | (mod == "Selección Abreviada de Menor Cuantía") | (mod == "Selección Abreviada de Menor Cuantía (Ley 1150 de 2007)") | (mod == "Seleccion Abreviada Menor Cuantia Sin Manifestacion Interes") | (mod == "Seleccion abreviada subasta inversa") | (mod == "Seleccion Abreviada de Menor Cuantia (Ley 1150 de 2007)") | (mod == "Seleccion Abreviada del literal h del numeral 2 del articulo 2 de la Ley 1150 de 2007") | (mod == "Seleccion Abreviada servicios de Salud"):
+    elif (mod == "subasta") | (mod == "seleccion abreviada literal h numeral articulo ley") | (mod == "seleccion abreviada menor cuantia") | (mod == "seleccion abreviada menor cuantia ( ley )") | (mod == "seleccion abreviada menor cuantia manifestacion interes") | (mod == "seleccion abreviada servicios salud") | (mod == "seleccion abreviada subasta inversa") | (mod == "Seleccion Abreviada de Menor Cuantia") | (mod == "Selección Abreviada del literal h del numeral 2 del artículo 2 de la Ley 1150 de 2007") | (mod == "Subasta") | (mod == "Selección abreviada subasta inversa") | (mod == "Selección Abreviada servicios de Salud") | (mod == "Selección Abreviada de Menor Cuantía") | (mod == "Selección Abreviada de Menor Cuantía (Ley 1150 de 2007)") | (mod == "Seleccion Abreviada Menor Cuantia Sin Manifestacion Interes") | (mod == "Seleccion abreviada subasta inversa") | (mod == "Seleccion Abreviada de Menor Cuantia (Ley 1150 de 2007)") | (mod == "Seleccion Abreviada del literal h del numeral 2 del articulo 2 de la Ley 1150 de 2007") | (mod == "Seleccion Abreviada servicios de Salud"):
         tp = "Selección Abreviada"
     else:
         tp = "Otras Modalidades de Contratación"
@@ -175,6 +175,34 @@ def limpieza_codigos_unspsc(df,nombre_columna):
     df['Alerta UNSPSC']=alertas_unspc
     
     return df
+
+# Limpieza y unificación
+# Función Limpieza de Texto
+# ==============================================================================
+def unificar_series(serie):    
+    
+    serie = serie.str.title() # Tipo oración
+    serie = serie.str.strip() # Quitar espacios
+    
+    # Quitar tíldes y caracteres especiales
+    a,b = 'áéíóúüàèìòùï','aeiouuaeioui'
+    trans = str.maketrans(a,b)
+    serie = serie.str.translate(trans)
+    
+    serie = serie.str.replace(',', '') # Quitar comas
+    serie = serie.str.replace(';', '.') # Quitar ;
+    serie = serie.str.replace('-', ' ') # Quitar guiones
+    serie = serie.str.replace(' - ', ' ') # Quitar guiones
+    serie = serie.str.replace('+', '') # Quitar signos
+    serie = serie.str.replace('/', '') # Quitar signos
+    serie = serie.str.replace(':', '') # Quitar :
+    serie = serie.str.replace('  ', ' ') # Quitar doble espacio
+    serie = serie.str.replace('   ', ' ') # Quitar doble espacio
+    serie = serie.str.replace('lll', 'll') # Quitar l de más   
+    serie = serie.str.strip() # Quitar espacios
+    
+    
+    return serie
 
 
 
