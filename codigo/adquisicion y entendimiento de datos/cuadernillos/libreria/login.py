@@ -1,7 +1,7 @@
 import configparser
 from configparser import ExtendedInterpolation
 import pyodbc
-from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient, __version__
+#from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient, __version__
 from enum import Enum
 
 # Cargue de las credenciales para acceso a SQL server y/o a el DataLake
@@ -51,17 +51,17 @@ def login_sql(bodega):
     cursor = cnxn.cursor()
     return cnxn, cursor
 
-def login_datalake(contenedor=cliente_contenedor.datosemae):
-    '''
-    Conexión a la cuenta de almacenamiento de Azure utilizando el token SAS, junto con el contenedor
+# def login_datalake(contenedor=cliente_contenedor.datosemae):
+#     '''
+#     Conexión a la cuenta de almacenamiento de Azure utilizando el token SAS, junto con el contenedor
 
-    Parámetros:
-    contenedor: Cliente contenedor. Por defecto es "datosemae"
+#     Parámetros:
+#     contenedor: Cliente contenedor. Por defecto es "datosemae"
 
-    Retorna:
-    blob_service_client, container_client
-    '''
-    connect_str = f"BlobEndpoint={url_blob};SharedAccessSignature={sas_token}"
-    blob_service_client = BlobServiceClient.from_connection_string(connect_str)
-    container_client = blob_service_client.get_container_client(contenedor)
-    return blob_service_client, container_client
+#     Retorna:
+#     blob_service_client, container_client
+#     '''
+#     connect_str = f"BlobEndpoint={url_blob};SharedAccessSignature={sas_token}"
+#     blob_service_client = BlobServiceClient.from_connection_string(connect_str)
+#     container_client = blob_service_client.get_container_client(contenedor)
+#     return blob_service_client, container_client
